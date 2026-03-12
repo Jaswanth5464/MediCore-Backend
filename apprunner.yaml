@@ -3,7 +3,7 @@ runtime: DOTNET_8
 build:
   commands:
     build:
-      - dotnet publish -c Release -o out
+      - dotnet publish MediCore.API/MediCore.API.csproj -c Release -o out
 run:
   command: dotnet out/MediCore.API.dll
   network:
