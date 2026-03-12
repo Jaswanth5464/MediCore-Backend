@@ -1,0 +1,12 @@
+[bb]in/
+[oo]bj/
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+appsettings.Development.json
+# Production settings should be kept but we might want to exclude secrets 
+# if the user wants to be extra safe. For now we will keep it for reference.
