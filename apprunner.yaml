@@ -1,0 +1,15 @@
+version: 1.0
+runtime: DOTNET_8
+build:
+  commands:
+    build:
+      - dotnet publish -c Release -o out
+run:
+  command: dotnet out/MediCore.API.dll
+  network:
+    port: 8080
+  env:
+    - name: ASPNETCORE_ENVIRONMENT
+      value: "Production"
+    - name: JwtSettings__SecretKey
+      value: "SuperSecretProductionKey123!@#"
